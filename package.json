@@ -1,0 +1,15 @@
+{
+  "name": "grouipify",
+  "version": "1.0.0",
+  "description": "Groupify test demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohinish Teja",
+  "license": "MIT",
+  "dependencies": {
+    "@albedo-link/intent": "^0.10.1",
+    "stellar-sdk": "^7.0.0"
+  }
+}
