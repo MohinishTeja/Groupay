@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrouPay</title>
+
+    <link rel="stylesheet" href="group.css">
+    <script defer src="page1.js"></script>
+    
+    <link rel="icon" href="download.png">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script> 
+</head>
+<body>
+     
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="group.html">Group</a></li>
+    <li><a href="fun.html">Fun</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li style="float:right"><a class="active" href="index.html">GrouPay</a></li>
+  </ul>
+
+  <div class="box">
+    <form>
+        <span class="text-center">Login</span><br>
+	<div class="input-container">
+		<input type="text" id="us" required=""/>
+		<label>Username</label>		
+    </div>
+    
+	<div class="input-container">		
+		<input type="password" id="pass" required=""/>
+		<label>Password</label>
+    </div>
+
+		<button type="button" class="btn" id="bt">Login</button>
+</form>	
+  </div>
+
+  <script>
+      document.getElementById("bt").onclick= function a(){
+          var a=document.getElementById("us").value
+          var b=document.getElementById("pass").value
+          if(a=="spiderman" && b=="spiderman"){
+              window.location.href="user1.html"
+          }
+          else if(a=="batman" && b=="batman"){
+              window.location.href="user2.html"
+          }
+          else{
+              window.location.href="user3.html"
+          }
+      }
+  </script>
+    
+</body>
+</html>

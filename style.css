@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+html, body * { 
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+    margin: auto;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .button {
+    display: inline-block;
+    border-radius: 18px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .buttons{
+    margin-left: 35%;
+    margin-top: 25%;
+    position: absolute;
+  }
+
+  #group{
+    margin-bottom: 3%;
+  }
+
+  
+
+  .l{
+    position:absolute;
+}
+.lq{
+
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 100%;
+    font-size: 4em;
+    margin-top: 65%;
+    margin-left: 215%;
+}
+.lqq{
+    
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 100%;
+    font-size: 1em;
+    margin-top: -3%;
+    margin-left: 215%;
+}
